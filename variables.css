@@ -1,0 +1,81 @@
+/* ================================================================
+   LUMIN INFINITY GROUP — Design Tokens / CSS Custom Properties
+   ================================================================ */
+
+:root {
+  /* ── Colour palette: "Bioluminescence" ── */
+  --void:       #04050f;
+  --deep:       #080b22;
+  --panel:      #0d1130;
+  --panel-2:    #11163b;
+
+  --line:        rgba(150, 140, 255, .14);
+  --line-strong: rgba(150, 140, 255, .32);
+
+  --violet:      #7b5cfa;
+  --violet-soft: #9c8bff;
+  --cyan:        #2ee6dc;
+  --magenta:     #ff4fd8;
+  --gold:        #ffd166;
+  --success:     #34e7a1;
+  --danger:      #ff5d6c;
+
+  --text:      #eef0fc;
+  --text-dim:  #c3c7e8;
+  --muted:     #8a8fb8;
+  --muted-2:   #5b6090;
+
+  /* ── Gradients ── */
+  --grad-aurora:      linear-gradient(120deg, var(--violet) 0%, var(--cyan) 52%, var(--magenta) 100%);
+  --grad-aurora-soft: linear-gradient(120deg,
+                        rgba(123, 92, 250, .22),
+                        rgba(46, 230, 220, .18) 50%,
+                        rgba(255, 79, 216, .22));
+  --grad-radial:      radial-gradient(circle at 50% 0%,
+                        rgba(123, 92, 250, .35), transparent 60%);
+
+  /* ── Typography ── */
+  --font-display: 'Noto Kufi Arabic', system-ui, sans-serif;
+  --font-body:    'IBM Plex Sans Arabic', 'Tahoma', sans-serif;
+  --font-mono:    'Space Grotesk', 'JetBrains Mono', 'Courier New', monospace;
+
+  /* ── Spacing scale ── */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  40px;
+  --space-2xl: 64px;
+
+  /* ── Border radii ── */
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+
+  /* ── Easing ── */
+  --ease:      cubic-bezier(.16, .84, .32, 1);
+  --ease-snap: cubic-bezier(.5, 0, .1, 1);
+
+  /* ── Layout ── */
+  --container: 1320px;
+  --header-h:  84px;
+
+  /* ── Shadows ── */
+  --shadow-card:   0 30px 60px -20px rgba(0, 0, 0, .6);
+  --shadow-float:  0 10px 30px -8px rgba(0, 0, 0, .6);
+  --shadow-glow-v: 0 18px 40px -12px rgba(123, 92, 250, .55);
+}
+
+/* ── Light theme overrides ── */
+[data-theme="light"] {
+  --void:        #f6f5ff;
+  --deep:        #ffffff;
+  --panel:       #ffffff;
+  --panel-2:     #f1eeff;
+  --line:        rgba(80, 60, 180, .14);
+  --line-strong: rgba(80, 60, 180, .30);
+  --text:        #11122b;
+  --text-dim:    #33345c;
+  --muted:       #5d5f86;
+  --muted-2:     #8688ac;
+}
